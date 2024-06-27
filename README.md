@@ -23,20 +23,35 @@ To run this project, ensure you have Python 3.7+ installed. Install the required
 
 ```bash
 pip install -r requirements.txt
-
+```
+## Usage
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/autoencoder-anomaly-detection.git
+cd autoencoder-anomaly-detection
+```
+Prepare your dataset (see Dataset section).
+Train the autoencoder:
+```bash
+python train_autoencoder.py --dataset_path /path/to/your/dataset.csv
+```
+Evaluate the trained model:
+```bash
+python evaluate_model.py --model_path /path/to/saved/model.pth --test_dataset /path/to/test/dataset.csv
+```
 ## Dataset
 The project uses the NSL-KDD dataset from Kaggle, which contains network traffic data with both normal and anomalous instances. You can download the dataset from here.
 
 ## Training
 The autoencoder is trained on normal network traffic to learn a compact representation (latent space). Mean Squared Error (MSE) loss is used for reconstruction error minimization.
 
-**## Evaluation**
+## Evaluation
 The trained model is evaluated on a separate test dataset to assess its ability to detect anomalies in network traffic. Evaluation metrics such as precision, recall, and F1 score are computed.
 
-**## Contributing**
+## Contributing
 Contributions are welcome! Fork the repository, make improvements, and submit pull requests.
 
-**## Credits**
+## Credits
 Dataset:
 NSL-KDD Dataset: Sourced from Kaggle user hassan06.
 Libraries:
