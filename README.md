@@ -24,10 +24,10 @@ To run this project, ensure you have Python 3.7+ installed. Install the required
 ```bash
 pip install -r requirements.txt
 
-**## Dataset**
+## Dataset
 The project uses the NSL-KDD dataset from Kaggle, which contains network traffic data with both normal and anomalous instances. You can download the dataset from here.
 
-**## Training**
+## Training
 The autoencoder is trained on normal network traffic to learn a compact representation (latent space). Mean Squared Error (MSE) loss is used for reconstruction error minimization.
 
 **## Evaluation**
